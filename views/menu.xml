@@ -1,0 +1,25 @@
+<odoo>
+	<data>
+
+		<record id="action_deffered_list" model="ir.actions.act_window">
+			<field name="name">Deffered</field>
+			<field name="res_model">vit.deffered</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create"> Click to create a Import </p>
+				<p>klik tombol create untuk bikin Deffered baru</p>
+			</field>
+		</record>
+
+		<menuitem id="deffered_0"
+			name="Deffered"
+			sequence="20"/>
+
+		<menuitem id="deffered_1"
+			name="Deffered"
+			parent="deffered_0"
+			action="action_deffered_list"
+			sequence="20"/>
+
+	</data>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vit_deffered,vit.deffered,model_vit_deffered,,1,1,1,1
+access_vit_deffered_category,vit.deffered.category,model_vit_deffered_category,,1,1,1,1
+access_vit_deffered_line,vit.deffered.line,model_vit_deffered_line,,1,1,1,1

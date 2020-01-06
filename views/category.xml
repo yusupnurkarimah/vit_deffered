@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Add you code here -->
+        <!-- tree -->
+		<record model="ir.ui.view" id="vit_deffered_category_tree">
+			<field name="name">vit_deffered_category_tree</field>
+			<field name="model">vit.deffered.category</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="Deffered Category">
+					<field name="journal_id"/>
+					<field name="account_asset_id"/>
+					<field name="account_depreciation_expense_id"/>
+					<field name="method_number"/>
+					<field name="method_period"/>
+				</tree>
+			</field>
+		</record>
+    <!-- form -->
+		<record model="ir.ui.view" id="vit_deffered_category_form">
+			<field name="name">vit_deffered_category_form</field>
+			<field name="model">vit.deffered.category</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="Deffered Category">
+                    <sheet>
+                        <div class="oe_title">
+							<label for="name" class="oe_edit_only" string="Deffered Category"/>
+							<h1><field name="name"/></h1>
+						</div>
+                        <group>
+                            <group string="Journal Entries">
+                                <field name="journal_id"/>
+                                <field name="account_asset_id"/>
+                                <field name="account_depreciation_expense_id"/>
+                            </group>
+                            <group string="Periodicity">
+                                <field name="method_number"/>
+                                <field name="method_period"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
