@@ -41,6 +41,9 @@
                                 <field name="method_number"/>
                                 <field name="method_period"/>
                             </group>
+							<group string="Additional Options">
+								<field name="open_asset"/>
+							</group>
                         </group>
                     </sheet>
                 </form>
