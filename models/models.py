@@ -36,7 +36,8 @@ class deffered(models.Model):
 
 	@api.depends('deffered_line_ids')
 	def _compute_residual(self):
-		for line in self.deffered_line_ids[0]:
+		posted = self.deffered_line_ids.filtered(lambda x: x.move_check)
+		for line in posted:
 			self.residual = line.remaining_value
 
 	@api.multi
